@@ -10,3 +10,5 @@ color_echo()
         *)      echo "$2";;
     esac
 }
+
+color_echo "green" "Objective: SSH configuration for setting up for CICD"
