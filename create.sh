@@ -22,6 +22,8 @@ cat ~/.ssh/id_rsa_auto_gen.pub | cat >> ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 
+cat ~/.ssh/id_rsa_auto_gen
+
 cat <<EOF
 {
 Need to add the below if not added earlier
