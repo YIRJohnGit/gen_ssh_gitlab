@@ -28,6 +28,10 @@ Need to add the below if not added earlier
 sudo vim /etc/ssh/sshd_config
 PubkeyAuthentication yes
 PasswordAuthentication no
+
+#Below is an example for ACCESSING THE REMOTE MACHINE
+ssh -o StrictHostKeyChecking=no -i ~/ssh_keys/devdevopspuratinet_key.pvt devdevopspurtainetcom@dev.devops.purtainet.com
+
 }
 EOF
 
