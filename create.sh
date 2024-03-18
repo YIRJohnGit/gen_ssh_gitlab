@@ -23,11 +23,14 @@ cat ~/.ssh/id_rsa.pub | cat >> ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 
-echo "{
-Need to add he below be if not added earlier
+cat <<EOF
+{
+Need to add the below if not added earlier
 sudo vim /etc/ssh/sshd_config
 PubkeyAuthentication yes
 PasswordAuthentication no
-}"
-systemctl restart sshd
+}
+EOF
+
+
 
