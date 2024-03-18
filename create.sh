@@ -16,7 +16,8 @@ color_echo "green" "Objective: SSH configuration for setting up for CICD"
 color_echo "yellow" "Enter an email OR your name OR ID [yi***@gmail.com]: "
 read user_ssh_input
 
-ssh-keygen -t rsa -b 2048 -C "${user_ssh_input}" -f ~/.ssh/id_rsa
+ssh-keygen -t rsa -b 2048 -C "${user_ssh_input}" -f ~/.ssh/id_rsa -N ""
+
 
 cat ~/.ssh/id_rsa.pub | cat >> ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
